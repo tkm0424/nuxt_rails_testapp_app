@@ -28,3 +28,5 @@
 
 #add
 .DS_Store
+/.ash_history
+/.irb_history
