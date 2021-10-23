@@ -1,0 +1,10 @@
+record
+attribute
+value
+exit
+user.errors.full_messages
+user = User.new(name: "test", email: email, password: "password")
+Hirb.disabe
+Hirb.disable
+user = User.new(name: "test", email: email, password: "password")
+exit
