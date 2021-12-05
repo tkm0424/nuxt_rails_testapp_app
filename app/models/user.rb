@@ -40,6 +40,17 @@ class User < ApplicationRecord
     users.find_by_activated(email).present?
   end
 
+  #リフレッシュトークンのJWT ID を記憶する
+  def remember(jti)
+    update!(refresh_jti: jti)
+  end
+
+  #リフレッシュトークンのJWT ID を削除する
+  def forget
+    update!(refresh_jti: nil)
+  end
+
+
   private
 
   # email小文字化
