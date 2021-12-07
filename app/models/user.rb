@@ -1,6 +1,8 @@
 require "validator/email_validator"
 
 class User < ApplicationRecord
+  # Token生成モジュール
+  include TokenGenerateService
 
   # バリデーション直前
   before_validation :downcase_email
