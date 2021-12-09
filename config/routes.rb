@@ -7,6 +7,8 @@ Rails.application.routes.draw do
         post :refresh, on: :collection
         delete :destroy, on: :collection
       end
+      #prijects
+      resources :projects, only:[:index]
     end
   end
 end
